@@ -3,6 +3,7 @@ package tarifa.Domain;
 import java.math.BigDecimal;
 import java.util.Set;
 
+import historialTarifa.Domain.HistorialTarifa;
 import tipoTarifa.Domain.TipoTarifa;
 
 public class Tarifa {

@@ -4,6 +4,8 @@ import java.util.Date;
 import java.util.Set;
 
 import aerolinea.Domain.Aerolinea;
+import asiento.Domain.Asiento;
+import historialEstado.Domain.HistorialEstado;
 import modelo.Domain.Modelo;
 
 public class Avion {

@@ -2,6 +2,8 @@ package tipoEmpleado.Domain;
 
 import java.util.Set;
 
+import empleado.Domain.Empleado;
+
 public class TipoEmpleado {
     private Long id;
     private String tipo;

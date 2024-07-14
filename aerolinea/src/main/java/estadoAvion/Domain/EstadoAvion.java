@@ -2,6 +2,8 @@ package estadoAvion.Domain;
 
 import java.util.Set;
 
+import historialEstado.Domain.HistorialEstado;
+
 public class EstadoAvion {
      private Long id;
     private String estado;

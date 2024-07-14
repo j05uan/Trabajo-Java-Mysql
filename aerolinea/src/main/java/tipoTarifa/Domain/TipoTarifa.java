@@ -2,6 +2,8 @@ package tipoTarifa.Domain;
 
 import java.util.Set;
 
+import tarifa.Domain.Tarifa;
+
 public class TipoTarifa {
     private Long id;
     private String tipo;

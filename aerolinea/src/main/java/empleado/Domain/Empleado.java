@@ -5,6 +5,7 @@ import java.util.Set;
 
 import aerolinea.Domain.Aerolinea;
 import tipoEmpleado.Domain.TipoEmpleado;
+import tripulacionDeVuelo.Domain.TripulacionDeVuelo;
 
 public class Empleado {
     private Long id;

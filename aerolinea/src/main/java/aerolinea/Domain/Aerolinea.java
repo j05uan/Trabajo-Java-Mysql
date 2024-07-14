@@ -3,6 +3,7 @@ package aerolinea.Domain;
 import java.util.Set;
 
 import avion.Domain.Avion;
+import empleado.Domain.Empleado;
 
 public class Aerolinea {
     private Long id;

@@ -2,6 +2,8 @@ package cliente.Domain;
 
 import java.util.Set;
 
+import pasajero.Domain.Pasajero;
+import reserva.Domain.Reserva;
 import tipoDocumento.Domain.TipoDocumento;
 
 public class Cliente {

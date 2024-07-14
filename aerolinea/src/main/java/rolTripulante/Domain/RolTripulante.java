@@ -2,6 +2,8 @@ package rolTripulante.Domain;
 
 import java.util.Set;
 
+import tripulacionDeVuelo.Domain.TripulacionDeVuelo;
+
 public class RolTripulante {
     private Long id;
     private String rol;

@@ -4,6 +4,7 @@ import java.math.BigDecimal;
 import java.util.Date;
 import java.util.Set;
 
+import asientoReserva.Domain.AsientosReserva;
 import cliente.Domain.Cliente;
 import ruta.Domain.Ruta;
 import tarifa.Domain.Tarifa;
