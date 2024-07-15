@@ -1,9 +1,9 @@
-package modelo.Domain;
+package modelo.Domain.entity;
 
 import java.util.Set;
 
 import avion.Domain.Entity.Avion;
-import fabricante.Domain.Fabricante;
+import fabricante.Domain.Entity.Fabricante;
 
 public class Modelo {
     private Long id;

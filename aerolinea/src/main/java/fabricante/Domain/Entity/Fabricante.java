@@ -1,8 +1,8 @@
-package fabricante.Domain;
+package fabricante.Domain.Entity;
 
 import java.util.Set;
 
-import modelo.Domain.Modelo;
+import modelo.Domain.entity.Modelo;
 
 public class Fabricante {
     private Long id;

@@ -6,13 +6,13 @@ import java.util.Set;
 import aerolinea.Domain.Entity.Aerolinea;
 import asiento.Domain.Asiento;
 import historialEstado.Domain.HistorialEstado;
-import modelo.Domain.Modelo;
+import modelo.Domain.entity.Modelo;
 
 public class Avion {
     private Long id;
     private String matricula;
     private int capacidad;
-    private java.util.Date fechaFabricacion;
+    private Date fechaFabricacion;
     private Aerolinea aerolinea;
     private Modelo modelo;
     private Set<Asiento> asientos;
@@ -96,7 +96,9 @@ public class Avion {
         this.historialEstados = historialEstados;
     }
 
-    
-
-
+    @Override
+    public String toString() {
+        return String.format("Avión [ID=%d, Matrícula=%s, Capacidad=%d, Fecha de Fabricación=%s, Aerolínea=%s, Modelo=%s]", 
+                             id, matricula, capacidad, fechaFabricacion, aerolinea, modelo);
+    }
 }
