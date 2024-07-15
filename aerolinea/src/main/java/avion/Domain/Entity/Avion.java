@@ -1,9 +1,9 @@
-package avion.Domain;
+package avion.Domain.Entity;
 
 import java.util.Date;
 import java.util.Set;
 
-import aerolinea.Domain.Aerolinea;
+import aerolinea.Domain.Entity.Aerolinea;
 import asiento.Domain.Asiento;
 import historialEstado.Domain.HistorialEstado;
 import modelo.Domain.Modelo;

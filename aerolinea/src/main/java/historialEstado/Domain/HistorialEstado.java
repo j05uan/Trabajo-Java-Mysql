@@ -2,7 +2,7 @@ package historialEstado.Domain;
 
 import java.util.Date;
 
-import avion.Domain.Avion;
+import avion.Domain.Entity.Avion;
 import estadoAvion.Domain.EstadoAvion;
 
 public class HistorialEstado {

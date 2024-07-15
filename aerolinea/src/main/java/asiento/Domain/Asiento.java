@@ -3,7 +3,7 @@ package asiento.Domain;
 import java.util.Set;
 
 import asientoReserva.Domain.AsientosReserva;
-import avion.Domain.Avion;
+import avion.Domain.Entity.Avion;
 
 public class Asiento {
     private Long id;

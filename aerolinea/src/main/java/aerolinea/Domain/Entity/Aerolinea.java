@@ -1,8 +1,8 @@
-package aerolinea.Domain;
+package aerolinea.Domain.Entity;
 
 import java.util.Set;
 
-import avion.Domain.Avion;
+import avion.Domain.Entity.Avion;
 import empleado.Domain.Empleado;
 
 public class Aerolinea {

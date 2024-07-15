@@ -2,7 +2,7 @@ package modelo.Domain;
 
 import java.util.Set;
 
-import avion.Domain.Avion;
+import avion.Domain.Entity.Avion;
 import fabricante.Domain.Fabricante;
 
 public class Modelo {
