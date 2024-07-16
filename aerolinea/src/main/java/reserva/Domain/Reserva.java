@@ -6,7 +6,7 @@ import java.util.Set;
 
 import asientoReserva.Domain.AsientosReserva;
 import cliente.Domain.Cliente;
-import ruta.Domain.Ruta;
+import ruta.Domain.Entity.Ruta;
 import tarifa.Domain.Tarifa;
 
 public class Reserva {

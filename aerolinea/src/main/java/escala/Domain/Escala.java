@@ -1,7 +1,7 @@
 package escala.Domain;
 
-import aeropuerto.Domain.Aeropuerto;
-import ruta.Domain.Ruta;
+import aeropuerto.domain.entity.Aeropuerto;
+import ruta.Domain.Entity.Ruta;
 
 public class Escala {
     

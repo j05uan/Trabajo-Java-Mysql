@@ -4,7 +4,7 @@ import java.util.List;
 import java.util.Scanner;
 
 import fabricante.Domain.Entity.Fabricante;
-import fabricante.Infraestructure.out.FabricanteRepository;
+import fabricante.infraestructure.out.FabricanteRepository;
 import modelo.Application.ModeloUseCase;
 import modelo.Domain.entity.Modelo;
 import utils.Consola;
@@ -19,22 +19,19 @@ public class ModeloControlador {
     }
 
     public void crearModelo() {
+        
+        FabricanteRepository fabricanteRepo = new FabricanteRepository();
         System.out.println(" ---- Menu Crear Modelo ---");
 
         System.out.println("Ingrese el nombre del modelo: ");
         String nombre = Consola.SCANNER.nextLine();
 
-        // Obtener la lista de fabricantes
-        FabricanteRepository fabricanteRepo = new FabricanteRepository();
+        
         List<Fabricante> fabricantes = fabricanteRepo.ObtenerTodosLosFabricantes();
-
-        // Mostrar la lista de fabricantes y permitir al usuario seleccionar uno
-        mostrarFabricantes(fabricantes);
         System.out.println("Ingrese el ID del Fabricante: ");
         Long idFabricante = Consola.SCANNER.nextLong();
         Consola.SCANNER.nextLine();  // Consumir el salto de línea después de nextLong
 
-        // Buscar el fabricante seleccionado
         Fabricante fabricanteSeleccionado = fabricantes.stream()
                 .filter(fabricante -> fabricante.getId().equals(idFabricante))
                 .findFirst()

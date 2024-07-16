@@ -1,8 +1,17 @@
-package aerolinea.Domain.Services;
+package aerolinea.domain.services;
 
-import aerolinea.Domain.Entity.Aerolinea;
+import aerolinea.domain.entity.Aerolinea;
+import java.util.List;
 
 public interface AerolineaServices {
-    void CrearAerolinea(Aerolinea aerolinea);
 
+    void crearAerolinea(Aerolinea aerolinea);
+
+    List<Aerolinea> obtenerTodasLasAerolineas();
+
+    Aerolinea obtenerAerolineaPorId(Long id);
+
+    void actualizarAerolinea(Aerolinea aerolinea);
+
+    void eliminarAerolinea(Long id);
 }

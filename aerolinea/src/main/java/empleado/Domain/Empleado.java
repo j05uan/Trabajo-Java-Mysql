@@ -3,7 +3,7 @@ package empleado.Domain;
 import java.util.Date;
 import java.util.Set;
 
-import aerolinea.Domain.Entity.Aerolinea;
+import aerolinea.domain.entity.Aerolinea;
 import tipoEmpleado.Domain.TipoEmpleado;
 import tripulacionDeVuelo.Domain.TripulacionDeVuelo;
 

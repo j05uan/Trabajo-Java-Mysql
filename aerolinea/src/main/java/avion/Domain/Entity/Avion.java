@@ -3,7 +3,7 @@ package avion.Domain.Entity;
 import java.util.Date;
 import java.util.Set;
 
-import aerolinea.Domain.Entity.Aerolinea;
+import aerolinea.domain.entity.Aerolinea;
 import asiento.Domain.Asiento;
 import historialEstado.Domain.HistorialEstado;
 import modelo.Domain.entity.Modelo;

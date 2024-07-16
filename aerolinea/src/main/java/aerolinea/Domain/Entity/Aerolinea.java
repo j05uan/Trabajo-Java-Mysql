@@ -1,4 +1,4 @@
-package aerolinea.Domain.Entity;
+package aerolinea.domain.entity;
 
 import java.util.Set;
 

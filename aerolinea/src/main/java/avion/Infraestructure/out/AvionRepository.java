@@ -8,8 +8,8 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-import aerolinea.Domain.Entity.Aerolinea;
-import aerolinea.Infraestructure.out.AerolineaRepository;
+import aerolinea.domain.entity.Aerolinea;
+import aerolinea.infraestructure.out.AerolineaRepository;
 import avion.Domain.Entity.Avion;
 import avion.Domain.Services.AvionServices;
 import modelo.Domain.entity.Modelo;
@@ -23,7 +23,7 @@ public class AvionRepository implements AvionServices {
         String sql = "INSERT INTO aviones (matricula, capacidad, fecha_fabricacion, aerolinea_id, modelo_id) VALUES (?, ?, ?, ?, ?)";
 
         try (Connection connection = ConfiguracionBaseDeDatos.getConnection();
-             PreparedStatement statement = connection.prepareStatement(sql, PreparedStatement.RETURN_GENERATED_KEYS)) {
+            PreparedStatement statement = connection.prepareStatement(sql, PreparedStatement.RETURN_GENERATED_KEYS)) {
 
             statement.setString(1, avion.getMatricula());
             statement.setInt(2, avion.getCapacidad());  // La capacidad es un entero
@@ -52,8 +52,8 @@ public class AvionRepository implements AvionServices {
         List<Avion> aviones = new ArrayList<>();
 
         try (Connection connection = ConfiguracionBaseDeDatos.getConnection();
-             PreparedStatement statement = connection.prepareStatement(sql);
-             ResultSet resultSet = statement.executeQuery()) {
+            PreparedStatement statement = connection.prepareStatement(sql);
+            ResultSet resultSet = statement.executeQuery()) {
 
             while (resultSet.next()) {
                 Avion avion = mapResultSetToAvion(resultSet);
@@ -73,7 +73,7 @@ public class AvionRepository implements AvionServices {
         List<Avion> aviones = new ArrayList<>();
 
         try (Connection connection = ConfiguracionBaseDeDatos.getConnection();
-             PreparedStatement statement = connection.prepareStatement(sql)) {
+            PreparedStatement statement = connection.prepareStatement(sql)) {
 
             statement.setString(1, matricula);
             try (ResultSet resultSet = statement.executeQuery()) {
@@ -96,7 +96,7 @@ public class AvionRepository implements AvionServices {
         Avion avion = null;
 
         try (Connection connection = ConfiguracionBaseDeDatos.getConnection();
-             PreparedStatement statement = connection.prepareStatement(sql)) {
+            PreparedStatement statement = connection.prepareStatement(sql)) {
 
             statement.setLong(1, id);
             try (ResultSet resultSet = statement.executeQuery()) {
@@ -117,13 +117,13 @@ public class AvionRepository implements AvionServices {
         String sql = "UPDATE aviones SET matricula = ?, capacidad = ?, fecha_fabricacion = ?, aerolinea_id = ?, modelo_id = ? WHERE id = ?";
 
         try (Connection connection = ConfiguracionBaseDeDatos.getConnection();
-             PreparedStatement statement = connection.prepareStatement(sql)) {
+            PreparedStatement statement = connection.prepareStatement(sql)) {
 
             statement.setString(1, avion.getMatricula());
-            statement.setInt(2, avion.getCapacidad());  // La capacidad es un entero
-            statement.setDate(3, new Date(avion.getFechaFabricacion().getTime()));  // Convertir java.util.Date a java.sql.Date
-            statement.setLong(4, avion.getAerolinea().getId());  // ID de Aerolinea
-            statement.setLong(5, avion.getModelo().getId());  // ID de Modelo
+            statement.setInt(2, avion.getCapacidad());  
+            statement.setDate(3, new Date(avion.getFechaFabricacion().getTime()));
+            statement.setLong(4, avion.getAerolinea().getId());  
+            statement.setLong(5, avion.getModelo().getId());  
             statement.setLong(6, avion.getId());
 
             statement.executeUpdate();
@@ -138,7 +138,7 @@ public class AvionRepository implements AvionServices {
         String sql = "DELETE FROM aviones WHERE id = ?";
 
         try (Connection connection = ConfiguracionBaseDeDatos.getConnection();
-             PreparedStatement statement = connection.prepareStatement(sql)) {
+            PreparedStatement statement = connection.prepareStatement(sql)) {
 
             statement.setLong(1, id);
             statement.executeUpdate();
@@ -163,16 +163,5 @@ public class AvionRepository implements AvionServices {
     }
 
 
-    @Override
-    public Avion obtenerAvionesPorMatricula(String matricula) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'obtenerAvionesPorMatricula'");
-    }
-
-
-    @Override
-    public void eliminarAvion(Avion avion) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'eliminarAvion'");
-    }
+    
 }

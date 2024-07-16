@@ -1,9 +1,10 @@
-package aerolinea.Infraestructure.in;
+package aerolinea.infraestructure.in;
 
+import java.util.List;
 import java.util.Scanner;
 
-import aerolinea.Application.AerolineaUseCase;
-import aerolinea.Domain.Entity.Aerolinea;
+import aerolinea.application.AerolineaUseCase;
+import aerolinea.domain.entity.Aerolinea;
 import utils.Consola;
 
 public class AerolineaControlador {
@@ -16,17 +17,57 @@ public class AerolineaControlador {
         this.aerolineaUseCase = aerolineaUseCase;
     }
 
-    // Agregar metodos que necesito para la gestion de la entidad
-    public void crearAerolinea(){
-
-        System.out.println("---- Menu Crear Aerolinea ----");
-
-        System.out.println("Ingrese el nombre de la Aerolinea: ");
-        String nombre = Consola.SCANNER.nextLine();
-
+    public void crearAerolinea() {
+        System.out.println("---- Crear Aerolínea ----");
+    
+        System.out.println("Ingrese el nombre de la Aerolínea: ");
+        String nombre = scanner.nextLine();
+    
         Aerolinea aerolinea = new Aerolinea();
         aerolinea.setNombre(nombre);
-
+    
+        aerolineaUseCase.crearAerolinea(aerolinea);
+    
+        System.out.println("Aerolínea creada con éxito.");
     }
+    public void listarAerolineas() {
+    System.out.println("---- Listado de Aerolíneas ----");
+
+    List<Aerolinea> aerolineas = aerolineaUseCase.obtenerTodasLasAerolineas();
+
+    if (aerolineas.isEmpty()) {
+        System.out.println("No hay aerolíneas registradas.");
+    } else {
+        for (Aerolinea aerolinea : aerolineas) {
+            System.out.printf("ID: %d, Nombre: %s%n", aerolinea.getId(), aerolinea.getNombre());
+        }
+    }
+}
+public void actualizarAerolinea() {
+    System.out.println("---- Actualizar Aerolínea ----");
+
+    // Listar todas las aerolíneas
+    listarAerolineas();
+
+    System.out.println("Ingrese el ID de la Aerolínea que desea actualizar: ");
+    Long id = Long.parseLong(scanner.nextLine());
+
+    Aerolinea aerolineaExistente = aerolineaUseCase.obtenerAerolineaPorId(id);
+
+    if (aerolineaExistente != null) {
+        System.out.println("Ingrese el nuevo nombre de la Aerolínea: ");
+        String nuevoNombre = scanner.nextLine();
+
+        aerolineaExistente.setNombre(nuevoNombre);
+
+        aerolineaUseCase.actualizarAerolinea(aerolineaExistente);
+
+        System.out.println("Aerolínea actualizada con éxito.");
+    } else {
+        System.out.println("No se encontró ninguna aerolínea con el ID proporcionado.");
+    }
+}
+
+
 
 }

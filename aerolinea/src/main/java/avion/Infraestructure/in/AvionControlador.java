@@ -4,8 +4,8 @@ import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
 
-import aerolinea.Domain.Entity.Aerolinea;
-import aerolinea.Infraestructure.out.AerolineaRepository;
+import aerolinea.domain.entity.Aerolinea;
+import aerolinea.infraestructure.out.AerolineaRepository;
 import avion.Application.AvionUseCase;
 import avion.Domain.Entity.Avion;
 import avion.Infraestructure.out.AvionRepository;

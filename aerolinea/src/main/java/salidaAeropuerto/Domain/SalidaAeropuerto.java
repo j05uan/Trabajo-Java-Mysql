@@ -2,8 +2,8 @@ package salidaAeropuerto.Domain;
 
 import java.util.Date;
 
-import aeropuerto.Domain.Aeropuerto;
-import ruta.Domain.Ruta;
+import aeropuerto.domain.entity.Aeropuerto;
+import ruta.Domain.Entity.Ruta;
 
 public class SalidaAeropuerto {
     private Long id;

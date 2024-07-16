@@ -1,10 +1,10 @@
-package ruta.Domain;
+package ruta.Domain.Entity;
 
 import java.math.BigDecimal;
 import java.util.Date;
 import java.util.Set;
 
-import aeropuerto.Domain.Aeropuerto;
+import aeropuerto.domain.entity.Aeropuerto;
 import escala.Domain.Escala;
 import reserva.Domain.Reserva;
 import salidaAeropuerto.Domain.SalidaAeropuerto;

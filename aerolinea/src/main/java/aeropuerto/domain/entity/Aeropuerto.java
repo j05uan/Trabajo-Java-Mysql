@@ -1,4 +1,4 @@
-package aeropuerto.Domain;
+package aeropuerto.domain.entity;
 
 import java.util.Set;
 

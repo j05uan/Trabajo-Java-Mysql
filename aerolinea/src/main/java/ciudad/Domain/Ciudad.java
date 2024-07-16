@@ -2,7 +2,7 @@ package ciudad.Domain;
 
 import java.util.Set;
 
-import aeropuerto.Domain.Aeropuerto;
+import aeropuerto.domain.entity.Aeropuerto;
 import pais.Domain.Pais;
 
 public class Ciudad {
