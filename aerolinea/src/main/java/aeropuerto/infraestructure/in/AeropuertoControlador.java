@@ -13,6 +13,11 @@ public class AeropuertoControlador {
         this.aeropueroUseCase = aeropueroUseCase;
     }
 
+    public void crearAeropuerto(){
+
+        System.out.println("---Menu Crear Aeropuerto---");
+        String
+    }
     
 
 }

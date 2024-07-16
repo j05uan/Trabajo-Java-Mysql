@@ -11,7 +11,7 @@ public class AeropueroUseCase {
     }
 
     public void crearAeropuerto(Aeropuerto aeropuerto){
-        aeropuertoServices.CrearAeropuerto(aeropuerto);
+        aeropuertoServices.crearAeropuerto(aeropuerto);
     }
     
 }

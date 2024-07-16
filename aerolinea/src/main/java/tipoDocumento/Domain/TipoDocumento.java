@@ -2,7 +2,7 @@ package tipoDocumento.Domain;
 
 import java.util.Set;
 
-import cliente.Domain.Cliente;
+import cliente.Domain.entity.Cliente;
 
 public class TipoDocumento {
     private Long id;

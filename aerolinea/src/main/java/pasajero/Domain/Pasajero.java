@@ -2,8 +2,8 @@ package pasajero.Domain;
 
 import java.util.Set;
 
-import asientoReserva.Domain.AsientosReserva;
-import cliente.Domain.Cliente;
+import asientoReserva.Domain.Entity.AsientosReserva;
+import cliente.Domain.entity.Cliente;
 
 public class Pasajero {
     private Long id;

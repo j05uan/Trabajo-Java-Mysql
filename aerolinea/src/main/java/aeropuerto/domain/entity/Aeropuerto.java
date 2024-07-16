@@ -2,7 +2,7 @@ package aeropuerto.domain.entity;
 
 import java.util.Set;
 
-import ciudad.Domain.Ciudad;
+import ciudad.Domain.Entity.Ciudad;
 import escala.Domain.Escala;
 import salidaAeropuerto.Domain.SalidaAeropuerto;
 

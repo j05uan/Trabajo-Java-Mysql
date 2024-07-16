@@ -4,7 +4,7 @@ import java.util.Date;
 import java.util.Set;
 
 import aerolinea.domain.entity.Aerolinea;
-import asiento.Domain.Asiento;
+import asiento.Domain.Entity.Asiento;
 import historialEstado.Domain.HistorialEstado;
 import modelo.Domain.entity.Modelo;
 
