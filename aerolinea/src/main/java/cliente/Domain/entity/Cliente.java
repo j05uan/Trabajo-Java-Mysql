@@ -2,9 +2,9 @@ package cliente.Domain.entity;
 
 import java.util.Set;
 
-import pasajero.Domain.Pasajero;
-import reserva.Domain.Reserva;
-import tipoDocumento.Domain.TipoDocumento;
+import pasajero.Domain.entity.Pasajero;
+import reserva.Domain.entity.Reserva;
+import tipoDocumento.Domain.entity.TipoDocumento;
 
 public class Cliente {
     private Long id;

@@ -1,8 +1,8 @@
 package asientoReserva.Domain.Entity;
 
 import asiento.Domain.Entity.Asiento;
-import pasajero.Domain.Pasajero;
-import reserva.Domain.Reserva;
+import pasajero.Domain.entity.Pasajero;
+import reserva.Domain.entity.Reserva;
 
 public class AsientosReserva {
     private Long id;

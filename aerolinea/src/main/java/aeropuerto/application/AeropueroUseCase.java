@@ -14,4 +14,7 @@ public class AeropueroUseCase {
         aeropuertoServices.crearAeropuerto(aeropuerto);
     }
     
+    public void executed(Aeropuerto aeropuerto){
+        aeropuertoServices.crearAeropuerto(aeropuerto);
+    }
 }

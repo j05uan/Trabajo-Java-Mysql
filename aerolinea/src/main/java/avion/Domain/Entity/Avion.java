@@ -5,7 +5,7 @@ import java.util.Set;
 
 import aerolinea.domain.entity.Aerolinea;
 import asiento.Domain.Entity.Asiento;
-import historialEstado.Domain.HistorialEstado;
+import historialEstado.Domain.entity.HistorialEstado;
 import modelo.Domain.entity.Modelo;
 
 public class Avion {

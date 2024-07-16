@@ -3,8 +3,8 @@ package aeropuerto.domain.entity;
 import java.util.Set;
 
 import ciudad.Domain.Entity.Ciudad;
-import escala.Domain.Escala;
-import salidaAeropuerto.Domain.SalidaAeropuerto;
+import escala.Domain.entity.Escala;
+import salidaAeropuerto.Domain.entity.SalidaAeropuerto;
 
 public class Aeropuerto {
     private Long id;

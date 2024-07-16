@@ -3,7 +3,7 @@ package aerolinea.domain.entity;
 import java.util.Set;
 
 import avion.Domain.Entity.Avion;
-import empleado.Domain.Empleado;
+import empleado.Domain.entity.Empleado;
 
 public class Aerolinea {
     private Long id;

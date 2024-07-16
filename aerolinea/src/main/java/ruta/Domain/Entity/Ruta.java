@@ -5,9 +5,9 @@ import java.util.Date;
 import java.util.Set;
 
 import aeropuerto.domain.entity.Aeropuerto;
-import escala.Domain.Escala;
-import reserva.Domain.Reserva;
-import salidaAeropuerto.Domain.SalidaAeropuerto;
+import escala.Domain.entity.Escala;
+import reserva.Domain.entity.Reserva;
+import salidaAeropuerto.Domain.entity.SalidaAeropuerto;
 
 public class Ruta {
     
